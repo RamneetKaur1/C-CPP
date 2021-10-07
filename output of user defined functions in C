@@ -1,0 +1,52 @@
+
+PRESS
+<<1>>FOR FINDING POWER OF A NUMBER
+<<2>>FOR THE BINARAY EQUIVALENT OF A NUMBER
+<<3>> TO FIND THE REVERSE OF A NUMBER
+<<4>> FOR EXIT :1
+TO FIND POWER OF A NUMBER
+Enter base number: 4
+
+Enter power number(positive integer): 3
+
+4^3 = 64
+
+PRESS <<4>> TO EXIT AND <<5>> TO CONTINUE
+
+5
+
+PRESS
+<<1>>FOR FINDING POWER OF A NUMBER
+<<2>>FOR THE BINARAY EQUIVALENT OF A NUMBER
+<<3>> TO FIND THE REVERSE OF A NUMBER
+<<4>> FOR EXIT :2
+
+
+TO FIND THE BINARAY EQUIVALENT OF A NUMBER
+
+Enter a decimal integer(0 to 9)
+88
+
+BINARY CONVERSION OF 88 IS 1011000
+
+No.of 1's in the binary number is = 3
+
+
+PRESS <<4>> TO EXIT AND <<5>> TO CONTINUE : 5
+
+PRESS
+<<1>>FOR FINDING POWER OF A NUMBER
+<<2>>FOR THE BINARAY EQUIVALENT OF A NUMBER
+<<3>> TO FIND THE REVERSE OF A NUMBER
+<<4>> FOR EXIT :3
+TO FIND THE REVERSE OF A NUMBER
+Enter a number whose reverse do u want to evaluate: 2021
+
+After reverse the no is :1202
+
+PRESS <<4>> TO EXIT AND <<5>> TO CONTINUE
+
+4
+
+Process returned 0 (0x0)   execution time : 190.122 s
+Press any key to continue.
