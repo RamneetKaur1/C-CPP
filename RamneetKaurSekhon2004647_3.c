@@ -1,3 +1,4 @@
+// Guess the number game using C
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
