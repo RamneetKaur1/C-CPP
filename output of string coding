@@ -1,0 +1,42 @@
+Enter your Choice:
+=> 1 To input a string and print it :
+=> 2 To find the length of a string :
+=> 3 To read a sentence and replace lowercase characters by uppercase and vice-versa :
+=> 4 To Exit : 1
+-----------------------------------
+Input the string : HACKTOBER fest2021
+The string you entered is : HACKTOBER fest2021
+Enter your Choice:
+=> 1 To input a string and print it :
+=> 2 To find the length of a string :
+=> 3 To read a sentence and replace lowercase characters by uppercase and vice-versa :
+=> 4 To Exit : 2
+
+
+Find the length of a string :
+---------------------------------
+Input the string : HACKTOBER fest2021
+Length of the string is : 17
+
+Enter your Choice:
+=> 1 To input a string and print it :
+=> 2 To find the length of a string :
+=> 3 To read a sentence and replace lowercase characters by uppercase and vice-versa :
+=> 4 To Exit : 3
+
+
+Replace lowercase characters by uppercase and vice-versa :
+--------------------------------------------------------------
+Input the string : HACKTOBER fest2021
+
+The given sentence is   : HACKTOBER fest2021
+After Case changed the string  is: hacktober FEST2021
+
+Enter your Choice:
+=> 1 To input a string and print it :
+=> 2 To find the length of a string :
+=> 3 To read a sentence and replace lowercase characters by uppercase and vice-versa :
+=> 4 To Exit : 4
+YOU ARE EXITING !!!!
+Process returned 20 (0x14)   execution time : 55.528 s
+Press any key to continue.
