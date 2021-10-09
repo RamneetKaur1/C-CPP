@@ -1,0 +1,89 @@
+// To find Power of a number , Binary equivalent of a number ,Reverse of a number in C
+
+#include <stdio.h>
+int power(int n1, int n2);
+int decimal_binary(int num);
+int reverse_function(int num);
+int k = 0 ;
+int main() {
+    int x,p,c,t,base1,a,count,m,result,no,num,reverse_number;
+
+do {
+    printf("\nPRESS \n<<1>>FOR FINDING POWER OF A NUMBER \n<<2>>FOR THE BINARAY EQUIVALENT OF A NUMBER  \n<<3>> TO FIND THE REVERSE OF A NUMBER\n<<4>> FOR EXIT :");
+    scanf("%d",&x);
+
+    switch(x){
+    case 1 : printf("TO FIND POWER OF A NUMBER\n");
+             printf("Enter base number: ");
+             scanf("%d", &base1);
+             printf("\nEnter power number(positive integer): ");
+             scanf("%d", &a);
+             result = power(base1, a);
+             printf("\n%d^%d = %d", base1, a, result);
+             printf("\n\nPRESS <<4>> TO EXIT AND <<5>> TO CONTINUE\n\n");
+             scanf("%d",&m);
+             break;
+
+    case 2 : printf("\n\nTO FIND THE BINARAY EQUIVALENT OF A NUMBER\n");
+             printf("\nEnter a decimal integer(0 to 9)\n");
+             scanf("%d", &num);
+             printf("\nBINARY CONVERSION OF %d IS ",num);
+             decimal_binary(num);
+             printf("\n\nNo.of 1's in the binary number is = %d\n", k );
+             k =0 ;
+             printf("\n\nPRESS <<4>> TO EXIT AND <<5>> TO CONTINUE : ");
+             scanf("%d",&m);
+             break ;
+
+    case 3 : printf("TO FIND THE REVERSE OF A NUMBER\n");
+             printf("Enter a number whose reverse do u want to evaluate: ");
+             scanf("%d",&num);
+             p=reverse_function(num);
+             printf("\nAfter reverse the no is :%d",p);
+             printf("\n\nPRESS <<4>> TO EXIT AND <<5>> TO CONTINUE\n\n");
+             scanf("%d",&m);
+             break ;
+   case 4 : printf("YOU HAVE EXIT THE PROGRAM ");
+            return 0;
+            printf("\n\nPRESS <<4>> TO EXIT AND <<5>> TO CONTINUE\n\n");
+            scanf("%d",&m);}
+} while(m==5);
+}
+
+
+int static sum=0,rem;
+int reverse_function(int num){
+   if(num){
+      rem=num%10;
+      sum=sum*10+rem;
+      reverse_function(num/10);
+   }
+   else
+      return 0;
+   return sum;
+
+
+}
+
+int decimal_binary(int num)
+
+{
+	int r;
+	if(num>0)
+	{
+		r=num%2;
+		if(r==1)
+		k++;
+		decimal_binary(num/2);
+		printf("%d",r);
+	}
+
+}
+
+
+int power(int base, int a) {
+    if (a != 0)
+        return (base * power(base, a - 1));
+    else
+        return 1;
+}
