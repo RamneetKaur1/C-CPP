@@ -1,3 +1,4 @@
+
  Enter your Personal information::
 Patient name:Guneet
 Father's name/Husband's name:ABC
@@ -51,5 +52,3 @@ Which indicates it's POSITIVE CASE, Take care
 
 THANK YOU AND HAVE A NICE DAY
 
-Process returned 0 (0x0)   execution time : 36.015 s
-Press any key to continue.
