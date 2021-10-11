@@ -1,0 +1,119 @@
+#include <stdio.h>
+#include<conio.h>
+int info();
+void corona();
+void negative();
+void patient();
+int age,a;
+char name[100],father_name[100],gender[10];
+int b,c,d,e,f,g,h,i,j,k,l;
+
+int main()
+{
+ printf("\n Enter your Personal information::\n");
+ info();
+
+
+ printf("Enter 1 for CORONA TEST\n\n");
+ // enter your choice
+ scanf("%d",&a);
+ while(a<1||a>1)
+ {
+   printf("INVALID ENTRY");
+   printf("\nPlease Enter Valid choice\n");
+   scanf("%d",&a);
+ }
+ if (a==1)
+ {
+    printf("*****************************************\n");
+    printf("                COVID-19                 \n");
+    printf("*****************************************\n\n");
+    printf("Lets Begins\n\n");
+    printf("Please answer the following Questions:\n");
+    printf("Press 1 for YES and 0 for NO\n\n");
+    printf("Does patient have a Fever\n");
+    scanf("%d",&b);
+    printf("Does patient have Fever last week\n");
+    scanf("%d",&c);
+    printf("Does patient have a Headache\n");
+    scanf("%d",&d);
+    printf("Does patient have a Running Nose\n");
+    scanf("%d",&e);
+    printf("Does patient have a Dry cough\n");
+    scanf("%d",&g);
+    printf("Does patient have a Body ache\n");
+    scanf("%d",&h);
+    printf("Does patient loss of taste and smell\n");
+    scanf("%d",&i);
+    printf("Does patient have a sore throat\n");
+    scanf("%d",&j);
+    printf("Does patient fell difficulty in Breathing\n");
+    scanf("%d",&k);
+    printf("Does patient feel Chest pain\n");
+    scanf("%d",&l);
+
+ }
+
+  if((b==1)||(c==1)||(d==1)||(e==1)&&(g==1)||(h==1)&&(i==1)&&(j==1)&&(k==1)||(l==1))
+  {
+    corona();
+  }
+  else if((b==0)&&(c==0)&&(d==0)&&(e==0)&&(g==0)&&(h==0)&&(i==0)&&(j==0)&&(k==0)&&(l==0))
+  {
+    negative();
+  }
+  else
+  {
+    patient();
+    printf("\n");
+    printf("the patient report is declared\n\n");
+    printf("THANK YOU AND HAVE A NICE DAY\n");
+  }
+return 0;
+}
+
+
+void patient()
+{
+   printf("*******************************\n");
+   printf("*******************************\n");
+   printf("-----------REPORT--------------\n");
+   printf("*******************************\n");
+   printf("*******************************\n\n");
+   printf("Patient name:%s\n",name);
+   printf("Father's name/ Husband's name:%s\n",father_name);
+   printf("Gender:%s\n",gender);
+   printf("Age:%d\n",age);
+
+  }
+
+int info()
+{
+   printf("Patient name:");
+   scanf("%s",&name);
+   printf("Father's name/Husband's name:");
+   scanf("%s",&father_name);
+   printf("Gender:");
+   scanf("%s",&gender);
+   printf("Age:");
+   scanf("%d",&age);
+
+}
+ void corona()
+  {
+    patient();
+    printf("\nThe patient have symptoms of covid-19\n");
+    printf("Which indicates it's POSITIVE CASE, Take care\n\n");
+    printf("THANK YOU AND HAVE A NICE DAY\n");
+  }
+
+
+void negative()
+  {
+    patient();
+    printf("\nThe patient does not have any symptoms\n");
+    printf("Which indicates it's NEGATIVE CASE\n");
+    printf("STAY HOME STAY SAFE\n\n");
+    printf("THANK YOU AND HAVE A NICE DAY\n");
+  }
+
